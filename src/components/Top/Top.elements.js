@@ -10,6 +10,13 @@ color: #F7F7F7;
 background-image: url(${topBg});
 margin-bottom: 603px;
 `
+
+export const TopSectionActive = styled(Container)`
+height: 619px;
+color: black;
+background: transparent;
+margin-bottom: 603px;
+`
 export const Content = styled.div`
 display: flex;
 flex-direction: column;
@@ -36,7 +43,6 @@ font-size: 58px;
 line-height: 80px;
 text-align: center;
 letter-spacing: 0.2px;
-color: #FFFFFF;
 `
 export const Paragraph = styled.p`
 margin-top: 27px;
@@ -48,7 +54,6 @@ font-size: 24px;
 line-height: 38px;
 text-align: center;
 letter-spacing: 0.2px;
-color: #F7F7F7;
 `
 
 export const Btns = styled.div`
@@ -102,6 +107,35 @@ line-height: 36px;
 /* identical to box height, or 150% */
 letter-spacing: 0.1px;
 color: #FFFFFF;
+transition: 0.2s;
+
+
+&:focus {
+    outline: 0;
+}
+&:hover {
+    border: 1px solid #ED553B;
+    
+}
+&:active {
+    border: 1px solid #ED113B;
+}
+`
+export const BtnRightActive = styled.button`
+margin-left: 34px;
+height: 68px;
+width: 236px;
+background: transparent;
+border: 1px solid black;
+box-sizing: border-box;
+border-radius: 30px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height, or 150% */
+letter-spacing: 0.1px;
 transition: 0.2s;
 
 
